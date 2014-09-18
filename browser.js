@@ -1,0 +1,1 @@
+biojsiosam = require('./index');
