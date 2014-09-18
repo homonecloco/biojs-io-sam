@@ -10,23 +10,24 @@ Install the module with: `npm install biojs-io-sam`
 
 ```javascript
 var biojsiosam = require('biojs-io-sam');
-biojsiosam.hello("biojs"); // "hello biojs"
+biojsiosam.parse_sam(stringWithSamFile); 
 ```
 
 ## Documentation
 
-#### .hello(name)
+#### .parse_sam(stringWithSamFile)
 
-**Parameter**: `name`
+**Parameter**: `stringWithSamFile`
 **Type**: `String`
-**Example**: `biojs`
+**Example**: `test\_1	0	chr\_2	225	1	70M	*	0	0	TAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAAC	IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII	AS:i:0	XS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:70	YT:Z:UU
+test\_2	0	chr\_2	73	1	70M	*	0	0	CCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTA	IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII	AS:i:0	XS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:70	YT:Z:UU`
 
-The 'hello' method is responsible for showing a name.
+This mettods returns an array of string lines, wach one with the properties. 
 
-How to use this method
+
 
 ```javascript
-biojsiosam.hello('biojs'); // "hello biojs"
+biojsiosam.hello(StringwWithSamFile); // "hello biojs"
 ```
 
 ## Contributing
@@ -35,6 +36,10 @@ Please submit all issues and pull requests to the [homonecloco/biojs-io-sam](htt
 
 ## Support
 If you have any problem or suggestion please open an issue [here](https://github.com/homonecloco/biojs-io-sam/issues).
+
+
+## TODO
+Write the documentation of all the methods to query the flags and so on. 
 
 ## License 
 
