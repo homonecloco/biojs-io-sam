@@ -22,13 +22,8 @@ biojsiosam.parse_sam(stringWithSamFile);
 **Example**: `test\_1	0	chr\_2	225	1	70M	*	0	0	TAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAAC	IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII	AS:i:0	XS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:70	YT:Z:UU
 test\_2	0	chr\_2	73	1	70M	*	0	0	CCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTA	IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII	AS:i:0	XS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:70	YT:Z:UU`
 
-This mettods returns an array of string lines, wach one with the properties. 
+This methods returns an array of string lines, wach one with the properties. 
 
-
-
-```javascript
-biojsiosam.hello(StringwWithSamFile); // "hello biojs"
-```
 
 ## Contributing
 
