@@ -1,7 +1,7 @@
 {
   "name": "biojs-io-sam",
   "description": "SAM format parser, with the hability to retrive regions from  a ws",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/homonecloco/biojs-io-sam",
   "author": {
     "name": "Ricardo H. Ramirez-Gonzalez",
