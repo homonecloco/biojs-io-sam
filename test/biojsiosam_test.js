@@ -13,6 +13,16 @@ chai.should();
 var biojsiosam = require('../lib/biojsiosam.js');
 
 describe('biojs-io-sam module', function(){
+  describe('parse', function(){
+    it('should parse two lines', function(){
+      samFile="test_1	0	chr_1	225	1	70M	*	0	0	TAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAAC	IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII	AS:i:0	XS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	YT:Z:UU\ntest_2	0	chr_1	225	1	70M	*	0	0	TAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAAC	IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII	AS:i:0	XS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	YT:Z:UU"
+      res = biojsiosam.parse(samFile);
+      res.length.should.equal(2);
+      //console.log(res[0]);
+      res[0].qname.should.equal("test_1");
+      res[1].qname.should.equal("test_2");
+    });
+  });
   describe('#parseSamLine',function(){
   	it('should parse the sam line', function(){
   		samLine = biojsiosam.parseLine("test_1	0	chr_1	225	1	70M	*	0	0	TAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAAC	IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII	AS:i:0	XS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	YT:Z:UU");
